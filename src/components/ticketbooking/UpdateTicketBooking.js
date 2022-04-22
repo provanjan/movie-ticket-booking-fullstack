@@ -7,6 +7,7 @@ class UpdateTicketBooking extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            bookingId:"",
             movieId: "",
             bookingDate: "",
             transactionId: "",
@@ -18,7 +19,7 @@ class UpdateTicketBooking extends Component {
 
     componentWillReceiveProps(nextProps) {
         const {
-            id,
+            bookingId,
             movieId,
             bookingDate,
             transactionId,
@@ -27,7 +28,7 @@ class UpdateTicketBooking extends Component {
             customer,
         } = nextProps.ticketBooking;
         this.setState({
-            id,
+            bookingId,
             movieId,
             bookingDate,
             transactionId,
@@ -51,6 +52,7 @@ class UpdateTicketBooking extends Component {
         event.preventDefault();
         console.log("onSubmit hit");
         const newTicketBooking = {
+            bookingId:this.state.bookingId,
             movieId:this.state.movieId,
             bookingDate:this.state.bookingDate,
             transactionId:this.state.transactionId,

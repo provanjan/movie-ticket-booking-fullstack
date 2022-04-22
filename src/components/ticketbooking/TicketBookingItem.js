@@ -11,36 +11,38 @@ class TicketBookingItem extends React.Component {
         const { ticketBooking } = this.props;
         return (
 
-            <div className="container">
-                <div className="card card-body bg-light mb-3">
+            <div className="container" >
+                <div className="card card-body bg-light mb-3" >
                     <div className="row">
                         <div className="col-2">
-                            <span className="mx-auto">{ticketBooking.ticketIdentifier}</span>
+                            <span className="mx-auto" id="identifier">Ticket Id: {ticketBooking.ticketIdentifier}</span>
                         </div>
                         <div className="col-lg-6 col-md-4 col-8">
-                            <h3>{ticketBooking.movieId}</h3>
-                            <p>{ticketBooking.cost}</p>
+                            <h3 id="movieId">Movie ID :{ticketBooking.movieId}</h3>
+                            <p id="common">Customer Name :{ticketBooking.customer}</p>
+                            <p id="common">Number of Seats :{ticketBooking.ticket.noOfSeats}</p>
+                            <p id="common">Cost :{ticketBooking.totalCost}</p>
                         </div>
                         <div className="col-md-4 d-none d-lg-block">
                             <ul className="list-group">
-                                <a href="#">
-                                    <li className="list-group-item board">
-                                        <i className="fa fa-flag-checkered pr-1">Select Seats </i>
+                                <Link to={`/selectSeat/SeatDashboard/${ticketBooking.ticketIdentifier}`}>
+                                    <li className="list-group-item board" id="board">
+                                        <i className="fa fa-duotone fa-couch pr-1">&nbsp;<span id="couch">Select Seats</span> </i>
                                     </li>
-                                </a>
+                                </Link>
                                 <Link to={`/updateTicketBooking/${ticketBooking.ticketIdentifier}`}>
-                                    <li className="list-group-item update">
-                                        <i className="fa fa-edit pr-1">Update Your Ticket Booking</i>
+                                    <li className="list-group-item update" id="board">
+                                        <i className="fa fa-edit pr-1">&nbsp;<span id="update">Update Your Ticket Booking</span></i>
                                     </li>
                                 </Link>
                                 <a href="">
-                                    <li className="list-group-item delete"
+                                    <li className="list-group-item delete" id="board"
                                     onClick={this.onDeleteClick.bind(
                                         this,
                                         ticketBooking.ticketIdentifier
                                       )}
                                       >
-                                        <i className="fa fa-minus-circle pr-1">Delete Booking</i>
+                                        <i className="fa fa-minus-circle pr-1">&nbsp;<span id="delete">Delete Booking</span></i>
                                     </li>
                                 </a>
                             </ul>

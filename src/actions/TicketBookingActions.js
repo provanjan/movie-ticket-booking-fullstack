@@ -37,7 +37,7 @@ export const deleteTicketBooking = (id) => async (dispatch) => {
       "Are you sure to delete this booking? This will delete everything."
     )
   ) {
-    await axios.delete(`http://localhost:8080/api/projects/${id}`);
+    await axios.delete(`http://localhost:8080/api/ticketbooking/delete/${id}`);
 
     dispatch({
       type: DELETE_TICKETBOOKING,

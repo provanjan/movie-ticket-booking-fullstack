@@ -8,12 +8,12 @@ class AddTicketBooking extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            movieId:"",
-            bookingDate:"",
-            transactionId:"",
-            transactionMode:"",
-            ticketIdentifier:"",
-            customer:"",
+            movieId: "",
+            bookingDate: "",
+            transactionId: "",
+            transactionMode: "",
+            ticketIdentifier: "",
+            customer: "",
             errors: {},
         };
     }
@@ -32,12 +32,12 @@ class AddTicketBooking extends Component {
         event.preventDefault();
         console.log("------------onSubmit Triggered--------------");
         const newTicketBooking = {
-            movieId:this.state.movieId,
-            bookingDate:this.state.bookingDate,
-            transactionId:this.state.transactionId,
-            transactionMode:this.state.transactionMode,
-            ticketIdentifier:this.state.ticketIdentifier,
-            customer:this.state.customer,
+            movieId: this.state.movieId,
+            bookingDate: this.state.bookingDate,
+            transactionId: this.state.transactionId,
+            transactionMode: this.state.transactionMode,
+            ticketIdentifier: this.state.ticketIdentifier,
+            customer: this.state.customer,
         };
         //console.log(newProject);
         this.props.createTicketBooking(newTicketBooking, this.props.history);
@@ -53,7 +53,7 @@ class AddTicketBooking extends Component {
                             <h5 className="display-4 text-center">Book Your Ticket</h5>
                             <hr />
                             <form onSubmit={this.onSubmit}>
-                            <div className="form-group">
+                                <div className="form-group">
                                     <input
                                         type="text"
                                         className={classnames("form-control form-control-lg", {
@@ -70,6 +70,7 @@ class AddTicketBooking extends Component {
                                         </div>
                                     )}
                                 </div>
+
                                 <div className="form-group">
                                     <input
                                         type="text"

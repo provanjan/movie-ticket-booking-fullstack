@@ -13,10 +13,11 @@ class Dashboard extends React.Component {
         const { ticketBookings } = this.props.ticketBookings;
         console.log(ticketBookings);
         return (
-            <div className="projects">
+            <div className="projects ">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
+                            <br/>
                             <h1 className="display-4 text-center">Ticket Bookings</h1>
                             <br />
                             <Link to="/addTicketBooking" className="btn btn-lg btn-info">
