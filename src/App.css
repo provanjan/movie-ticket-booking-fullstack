@@ -1,0 +1,77 @@
+
+.fa.fa-edit {
+  color: #204b74;
+}
+.fa.fa-duotone.fa-couch{
+  color:rgb(26, 175, 26);
+ 
+}
+#couch{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.list-group-item.delete:hover {
+  transition: width 2s linear 1s;
+  background-color: pink;
+}
+#update{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#delete{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.list-group-item.update:hover {
+  transition: width 2s linear 1s;
+  background-color: rgba(6, 192, 238, 0.199);
+}
+
+.list-group-item.board:hover {
+  transition: width 2s linear 1s;
+  background-color: rgb(185, 231, 125);
+}
+
+.fa.fa-minus-circle {
+  color: red;
+}
+
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+
+.carousel {
+  width:900px;
+  margin: auto;
+}
+.list-group-item.board{
+  border-radius:10px;
+}
+
+#board{
+  border-radius:20px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+#movieId{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:cornflowerblue
+}
+#common{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: crimson;
+}
+#identifier{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+#copyright{
+  font-weight: bold;
+}
+.center{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(26, 27, 27);
+}
